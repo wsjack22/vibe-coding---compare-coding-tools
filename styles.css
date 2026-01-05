@@ -7,6 +7,9 @@
   --accent: #ff6b2c;
   --accent-2: #2d6cdf;
   --accent-3: #19a974;
+  --accent-4: #0f6d5e;
+  --accent-5: #f4a442;
+  --accent-6: #3b7bd6;
   --card: #fffaf4;
   --stroke: rgba(31, 29, 26, 0.12);
   --shadow: 0 30px 80px rgba(31, 29, 26, 0.12);
@@ -242,6 +245,21 @@ main {
   color: var(--accent-3);
 }
 
+.badge.copilot {
+  background: rgba(59, 123, 214, 0.15);
+  color: var(--accent-6);
+}
+
+.badge.q {
+  background: rgba(15, 109, 94, 0.15);
+  color: var(--accent-4);
+}
+
+.badge.gemini {
+  background: rgba(244, 164, 66, 0.2);
+  color: #b25c00;
+}
+
 .compare-table {
   margin-top: 80px;
 }
@@ -253,15 +271,17 @@ main {
   border: 1px solid var(--stroke);
   box-shadow: var(--shadow);
   overflow: hidden;
+  overflow-x: auto;
 }
 
 .table-row {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.1fr repeat(6, 1fr);
   padding: 18px 20px;
   gap: 16px;
   border-bottom: 1px solid var(--stroke);
   font-size: 0.96rem;
+  min-width: 920px;
 }
 
 .table-row.header {

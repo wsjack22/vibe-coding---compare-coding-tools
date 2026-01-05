@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 编程工具对比：Cursor / Codex / Claude Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">AI 工具雷达</div>
+        <div class="nav-links">
+          <a href="#overview">总览</a>
+          <a href="#compare">对比</a>
+          <a href="#choose">如何选择</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">AI 编程工具横评</p>
+        <h1>Cursor、Codex 与 Claude Code 的异同点一页看懂</h1>
+        <p class="lead">
+          从定位、交互到生态，聚焦真实开发流程。帮你决定在不同场景下该用哪一个，
+          以及如何组合使用。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#compare">进入对比</a>
+          <a class="btn ghost" href="#choose">看选择建议</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" id="overview">
+        <div class="stat" data-reveal>
+          <div class="stat-title">定位维度</div>
+          <div class="stat-value">IDE / CLI / Agent</div>
+          <div class="stat-sub">工具形态决定心智模型</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat-title">核心能力</div>
+          <div class="stat-value">生成 + 重构 + 协作</div>
+          <div class="stat-sub">覆盖从代码到流程</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat-title">适用场景</div>
+          <div class="stat-value">快速交付 / 深度调试</div>
+          <div class="stat-sub">选择是生产力杠杆</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section cards" id="compare">
+        <div class="section-title">
+          <h2>工具画像：一眼抓住特征</h2>
+          <p>三种工具的气质和工作流差异，决定它们适合的角色。</p>
+        </div>
+        <div class="card-grid">
+          <article class="tool-card" data-reveal>
+            <div class="badge cursor">Cursor</div>
+            <h3>IDE 内的“沉浸式副驾驶”</h3>
+            <p>
+              在编辑器内整合上下文、文件结构和多模型选择，适合高频改动与快速探索。
+            </p>
+            <ul>
+              <li>上下文抓取自动、开箱即用</li>
+              <li>适合持续迭代与重构</li>
+              <li>产品节奏快，体验偏前沿</li>
+            </ul>
+          </article>
+          <article class="tool-card" data-reveal>
+            <div class="badge codex">Codex CLI</div>
+            <h3>命令行里的任务型 Agent</h3>
+            <p>
+              以目标驱动和脚本能力见长，适合批量操作、自动化改造与 DevOps
+              场景。
+            </p>
+            <ul>
+              <li>偏“指令-执行-反馈”模式</li>
+              <li>易于嵌入自动化流程</li>
+              <li>对熟悉终端的团队友好</li>
+            </ul>
+          </article>
+          <article class="tool-card" data-reveal>
+            <div class="badge claude">Claude Code</div>
+            <h3>偏协作的工程思考伙伴</h3>
+            <p>
+              在长上下文与严谨推理上占优，适合方案设计、复杂重构与规范落地。
+            </p>
+            <ul>
+              <li>擅长提出结构化方案</li>
+              <li>适合大代码库分析</li>
+              <li>对“解释 + 决策”更友好</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compare-table">
+        <div class="section-title">
+          <h2>关键维度对比</h2>
+          <p>用同一把尺子量，减少“感觉派”选择。</p>
+        </div>
+        <div class="table" data-reveal>
+          <div class="table-row header">
+            <div>维度</div>
+            <div>Cursor</div>
+            <div>Codex</div>
+            <div>Claude Code</div>
+          </div>
+          <div class="table-row">
+            <div>使用形态</div>
+            <div>GUI IDE</div>
+            <div>CLI + 任务流</div>
+            <div>对话式 IDE/CLI</div>
+          </div>
+          <div class="table-row">
+            <div>强项</div>
+            <div>实时编辑 / 代码理解</div>
+            <div>自动执行 / 批量改造</div>
+            <div>推理 / 方案设计</div>
+          </div>
+          <div class="table-row">
+            <div>上下文策略</div>
+            <div>自动索引文件</div>
+            <div>显式输入 + 工具调用</div>
+            <div>超长上下文+总结</div>
+          </div>
+          <div class="table-row">
+            <div>团队协作</div>
+            <div>适合前端/产品迭代</div>
+            <div>适合平台/运维脚本</div>
+            <div>适合架构/规范同步</div>
+          </div>
+          <div class="table-row">
+            <div>学习曲线</div>
+            <div>低</div>
+            <div>中</div>
+            <div>中</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section signals">
+        <div class="section-title">
+          <h2>使用信号：什么时候该切换</h2>
+          <p>用“信号”而不是品牌来做选择。</p>
+        </div>
+        <div class="signal-grid">
+          <div class="signal" data-reveal>
+            <h4>需要快速改动大量文件</h4>
+            <p>优先用 Codex CLI 批量执行，再回到 Cursor 调整细节。</p>
+          </div>
+          <div class="signal" data-reveal>
+            <h4>要统一风格或规范</h4>
+            <p>Claude Code 更擅长生成清晰的规范和清单。</p>
+          </div>
+          <div class="signal" data-reveal>
+            <h4>要边写边验证视觉效果</h4>
+            <p>Cursor 的编辑体验和上下文感知更顺滑。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section choose" id="choose">
+        <div class="section-title">
+          <h2>如何选择：组合打法</h2>
+          <p>这三者更像“配合分工”，而不是互相替代。</p>
+        </div>
+        <div class="choose-grid">
+          <div class="choose-card" data-reveal>
+            <h3>独立开发者</h3>
+            <p>主力：Cursor。需要批量操作时叫上 Codex。</p>
+            <div class="meter">
+              <span>速度</span>
+              <div class="bar"><div style="width: 84%"></div></div>
+            </div>
+            <div class="meter">
+              <span>控制</span>
+              <div class="bar"><div style="width: 72%"></div></div>
+            </div>
+          </div>
+          <div class="choose-card" data-reveal>
+            <h3>团队协作</h3>
+            <p>Claude Code 用于设计与评审，Cursor 做日常开发。</p>
+            <div class="meter">
+              <span>一致性</span>
+              <div class="bar"><div style="width: 88%"></div></div>
+            </div>
+            <div class="meter">
+              <span>可追溯</span>
+              <div class="bar"><div style="width: 78%"></div></div>
+            </div>
+          </div>
+          <div class="choose-card" data-reveal>
+            <h3>平台与工具链</h3>
+            <p>Codex 做自动化脚本，Claude Code 做变更说明。</p>
+            <div class="meter">
+              <span>自动化</span>
+              <div class="bar"><div style="width: 90%"></div></div>
+            </div>
+            <div class="meter">
+              <span>可靠性</span>
+              <div class="bar"><div style="width: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>结论：</strong>Cursor 像“随身 IDE”，Codex 是“自动化队友”，Claude
+        Code 是“架构顾问”。用场景来决定组合。
+      </div>
+      <div class="footer-note">分享这页链接给朋友即可快速沟通共识。</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
